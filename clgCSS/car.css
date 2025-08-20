@@ -1,0 +1,86 @@
+#road{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* animation-name: run_road;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation:both; */
+}
+
+#one {
+    background-color: white;
+    height: 10px;
+    width: 100px;
+}
+
+#two {
+    background-color: white;
+    height: 10px;
+    width: 100px;
+}
+
+#three {
+    background-color: white;
+    height: 10px;
+    width: 100px;
+}
+
+#cc {
+    display: flex;
+    height: 720px;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url("https://tse2.mm.bing.net/th/id/OIP.U81gmDY6rG2elTWYOsPx3wHaCJ?pid=Api&P=0&h=180");
+}
+
+.class {
+    animation-name: run_road;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+
+#car {
+    height:170px;
+    width: 290px;
+    /* background-image: url("https://tse4.mm.bing.net/th/id/OIP.HoAG2w3HOQXfkmwXqkLwUAHaED?pid=Api&P=0&h=180"); */
+    background-image: url("car-removebg-preview.png");
+    background-size: cover;
+    animation-name: run;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    /* animation-direction: normal;*/
+    animation-direction: alternate; 
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    position: absolute;
+    bottom: 100px;
+}
+
+@keyframes run {
+    0%{
+        transform: translateX(0px) rotateY(0deg);        
+    }
+    49%{
+        transform: translateX(170vh) rotateY(0deg);
+    }
+    50%{
+        transform: translateX(170vh) rotateY(180deg);
+    }
+    100%{
+        transform: translateX(0px) rotateY(180deg);
+    }
+}
+
+/* @keyframes run_road {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+       transform: translateX(170vh);
+    }
+} */

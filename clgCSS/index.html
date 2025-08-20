@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 200px 300px;
+            grid-template-rows: 200px 300px;
+            transition: 3s;
+            gap: 10px;
+        }
+        .class{
+
+            overflow: hidden;
+            transition: 3s;
+        }
+        .class:hover{
+            transform: scale(1.2);
+        }
+        #one {
+            
+            background-image: url("https://plus.unsplash.com/premium_vector-1697729804286-7dd6c1a04597?w=352&dpr=2&h=367&auto=format&fit=crop&q=60&ixlib=rb-4.1.0");
+            background-size: cover;
+        }
+        #two{
+            
+            background-image: url(" https://plus.unsplash.com/premium_photo-1669613233557-1676c121fe73?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9yZXN0fGVufDB8fDB8fHww");
+            background-size: cover;
+        }
+        #three{
+            background-image: url("https://plus.unsplash.com/premium_vector-1697729849330-ef5db47d3246?w=352&dpr=2&h=367&auto=format&fit=crop&q=60&ixlib=rb-4.1.0");
+            background-size: cover;
+        }
+        #four{
+            background-image: url("https://plus.unsplash.com/premium_vector-1711987848637-85c1dfa3f85a?w=352&dpr=2&h=367&auto=format&fit=crop&q=60&ixlib=rb-4.1.0");
+            background-size: cover;
+        }
+        #five {
+            background-image: url("");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+        <div class="class" id="one">
+        </div>
+        <div class="class" id="two">
+        </div>
+        <div class="class" id="three"></div>
+        <div class="class" id="four"></div>
+        <div class="class" id="five"></div>
+    </div>
+</body>
+</html>
