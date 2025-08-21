@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient( to bottom , rgb(2, 2, 95) ,  rgb(41, 41, 153) , rgb(80, 80, 202) , rgb(79, 79, 254));
+    align-items: center;
+}
+
+div{
+    display: block;
+}
+
+.card{
+    width: 550px;
+    height: fit-content;
+}
+
+.panel{
+    background-color: rgba(14, 198, 226, 0.08);
+    border-radius: 16px;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.span {
+    border-radius: 80px;
+    color: black;
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    text-decoration: solid;
+}
+
+.media{
+    height: 100px;
+    width: 500px;
+    background-color: black;
+    border-radius: 16px;
+}
