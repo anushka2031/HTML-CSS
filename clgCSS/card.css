@@ -6,6 +6,7 @@ body {
     padding: 20px;
     background: linear-gradient( to bottom , rgb(2, 2, 95) ,  rgb(41, 41, 153) , rgb(80, 80, 202) , rgb(79, 79, 254));
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div{
@@ -13,12 +14,14 @@ div{
 }
 
 .card{
-    width: 550px;
+    width: 350px;
+    height: 1000px;
     height: fit-content;
 }
 
 .panel{
-    background-color: rgba(14, 198, 226, 0.08);
+    /* background-color: rgba(14, 198, 226, 0.08); */
+    background: linear-gradient( 45deg , rgb(152, 71, 238) ,  rgb(158, 87, 205) , rgb(80, 80, 202) , rgb(82, 130, 241));
     border-radius: 16px;
     color: aliceblue;
     padding: 20px;
@@ -34,11 +37,56 @@ div{
     font-family: Arial, sans-serif;
     padding: 5px 10px;
     text-decoration: solid;
+    position: relative;
+    top: 10px;
+    left: 5px;
 }
 
 .media{
-    height: 100px;
-    width: 500px;
+    height: 150px;
+    width: 300px;
     background-color: black;
     border-radius: 16px;
+}
+
+.title{   
+    margin: 8px 0px 4px;
+}
+
+.subtitle{
+    color: rgb(207, 194, 194);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.one{
+    width: 90px;
+    height: 22px;
+    background-color: rgb(97, 95, 95);
+    border-radius: 80px;
+    text-align: center;
+}
+
+.content{
+    margin: 13px 0px 16px;
+    color:  rgb(207, 194, 194);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    color: rgb(22, 224, 157);
+}
+
+.btn{
+    border-radius: 80px;
+    color: aliceblue;
+    background: linear-gradient( to right , rgb(1, 120, 160) 10% ,  rgb(32, 169, 193) , rgb(93, 168, 215) , rgb(128, 212, 248) );
+    text-decoration: solid;
 }
