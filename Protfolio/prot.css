@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(232, 155, 168);
+    display: inline;
 }
 
 
@@ -96,11 +97,96 @@ p{
 .icons{
     height: 60px;
     width: 60px;
-    background-color: rgb(89, 89, 231);
 }
 
 #links{
     align-self: flex-end;
     display: flex;
+    position: absolute;
+    top: 450px;
+    left: 400px;
+}
+
+#content{
+    display: flex;
     justify-content: space-around;
+    position: relative;
+    top: 200px;
+    padding: 50px 50px 50px 50px;
+}
+
+#right{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#as{
+    font-size: 50px;
+    text-align: center;
+}
+
+#as_con{
+    font-size: 20px;
+}
+
+#cv{
+    background-color: rgb(89, 89, 212);
+    border-radius: 16px;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 350px;
+    right: 340px;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+#left{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card1{
+    animation-name: card1_drop;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2s
+}
+
+@keyframes card1_drop {
+    0%{
+        transform: translateY(100vw);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.card2{
+    animation-name: card2_drop;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2s
+}
+
+@keyframes card2_drop {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(100px);
+    }
 }
