@@ -329,3 +329,103 @@ textarea{
     font-style: bold;
     margin-top: 50px;
 }
+
+
+.icircle{
+    align-items: center;
+    box-shadow: var(--smboxShadow);
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+    position: absolute;
+    width: 6rem;
+    background: rgb(230, 251, 206);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(235, 235, 235);
+    border-image: initial;
+    border-radius: 100%;
+}
+
+.maincircle{
+    box-shadow: var(--smboxShadow);
+    position: absolute;
+    height: 18rem;
+    right: 16rem;
+    top: 3rem;
+    width: 18rem;
+    z-index: 2;
+    background: rgb(156, 225, 137);
+    border-radius: 100%;
+    animation: rotate 2s linear 2ms infinite normal ;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.mainCircle:hover{
+
+}
+
+#amazon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#google{
+    bottom: 0;
+    left: 0;
+}
+
+#micr0soft{
+    top: 0;
+    left: 0;
+}
+
+#ibm{
+   top: 0;
+   right: 0;
+}
+
+#accenture{
+    bottom: 0;
+    right: 0;
+}
+
+.w-backCircle{
+    height: 13rem;
+    position: absolute;
+    width: 13rem;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.yellowCircle {
+    right: 11rem;
+    top: 9rem;
+    background: rgb(243, 212, 121);
+}
+
+.blueCircle {
+    right: 11rem;
+    top: 1px;
+    background: rgb(72, 111, 203);
+}
+
+.mainCircle, .bicon {
+    position: relative;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+         transform: rotate(180deg);
+    }
+}
