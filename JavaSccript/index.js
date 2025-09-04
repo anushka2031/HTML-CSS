@@ -167,7 +167,7 @@
 
 // 2 Sep
 
-let arr=[2,1,3,"hello","hi",true,false]
+// let arr=[2,1,3,"hello","hi",true,false]
 // function getStr(arr){
 //      let res =[]
 //      for(let i of arr){
@@ -224,8 +224,70 @@ let arr=[2,1,3,"hello","hi",true,false]
 //      console.log("hiii")
 // },1000)
 
-for(let i =1 ;i<5;i++){
-    setTimeout(()=>{
-     console.log(i)
-    },1000*i)
-}
+// for(let i =1 ;i<5;i++){
+//     setTimeout(()=>{
+//      console.log(i)
+//     },1000*i)
+// }
+
+// 3 Sep
+
+// window is a global object for js
+// console.log(window)
+
+
+// this keyword
+
+// let obj={
+//     id:1,
+//     name:"hello",
+//     sum:function(){
+//         console.log(this)
+//     }
+// }
+// obj.sum()
+
+// this always points window
+// a=5
+// console.log(this.a)
+
+// a=5
+// let obj={
+//     a:10,
+//     id:1,
+//     name:"hello",
+//     sum:()=>{
+//         console.log(this.a)
+//     },
+//     // arrow function always refer parent of parent
+//     sum1:function(){
+//         console.log(this.a)
+//     }
+// }
+// obj.sum()
+// obj.sum1()
+
+// protoype is the only hidden data type which the hidden properties of different data types used in program
+//let arr=[1,2,3,4]
+// console.log(Array.prototype)
+// console.log(arr.toString())
+
+// arr.map((a,b,c)=>{
+//     console.log(b)
+// })
+
+// Array.prototype.myMap=function(callback){
+//     let res=[]
+//     for(let i=0;i<this.length;i++){
+//         res.push(callback(this[i],i,this))
+//     }
+//     return res
+// }
+// let data=arr.myMap((a,b,c)=>{
+//    return c
+// })
+// console.log(data)
+
+// arr.myMap((a,b,c)=>{
+//     console.log(a)
+// })
