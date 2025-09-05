@@ -291,3 +291,64 @@
 // arr.myMap((a,b,c)=>{
 //     console.log(a)
 // })
+
+// let arr=[1,2,3,4,5]
+// Array.prototype.myfilter=function(cb){
+//     let res=[]
+// for(let i=0;i<this.length;i++){
+//     if(cb(this[i],i,this)){
+//         res.push(this[i])
+//     }
+// }
+// return res
+// }
+
+// let data=arr.myfilter((a,b,c)=>{
+//     return a%2==0
+// })
+// console.log(data)
+
+
+function step1(fn){
+    setTimeout(()=>{
+        console.log("photo got selected")
+        fn()
+    },5000)
+    
+}
+
+function step2(fn){
+    setTimeout(()=>{
+        console.log("filter")
+        fn()
+    },4000)
+    
+}
+
+function step3(fn){
+    setTimeout(()=>{
+        console.log("caption")
+        fn()
+    },3000)
+    
+}
+
+function step4(){
+    setTimeout(()=>{
+        console.log("post")
+    },1000)
+}
+
+// step1()
+// step2()
+// step3()
+// step4()
+
+// when the function is passed as an argument  of  function then it is called callback function.
+step1( ()=>{
+    step2(()=>{
+        step3(()=>{
+            step4()
+        })
+    })
+})
