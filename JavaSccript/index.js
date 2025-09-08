@@ -309,46 +309,64 @@
 // console.log(data)
 
 
-function step1(fn){
-    setTimeout(()=>{
-        console.log("photo got selected")
-        fn()
-    },5000)
+// function step1(fn){
+//     setTimeout(()=>{
+//         console.log("photo got selected")
+//         fn()
+//     },5000)
     
-}
+// }
 
-function step2(fn){
-    setTimeout(()=>{
-        console.log("filter")
-        fn()
-    },4000)
+// function step2(fn){
+//     setTimeout(()=>{
+//         console.log("filter")
+//         fn()
+//     },4000)
     
-}
+// }
 
-function step3(fn){
-    setTimeout(()=>{
-        console.log("caption")
-        fn()
-    },3000)
+// function step3(fn){
+//     setTimeout(()=>{
+//         console.log("caption")
+//         fn()
+//     },3000)
     
-}
+// }
 
-function step4(){
-    setTimeout(()=>{
-        console.log("post")
-    },1000)
-}
+// function step4(){
+//     setTimeout(()=>{
+//         console.log("post")
+//     },1000)
+// }
 
-// step1()
-// step2()
-// step3()
-// step4()
+// // step1()
+// // step2()
+// // step3()
+// // step4()
 
-// when the function is passed as an argument  of  function then it is called callback function.
-step1( ()=>{
-    step2(()=>{
-        step3(()=>{
-            step4()
-        })
-    })
+// // when the function is passed as an argument  of  function then it is called callback function.
+// step1( ()=>{
+//     step2(()=>{
+//         step3(()=>{
+//             step4()
+//         })
+//     })
+// })
+
+let promise = new Promise((res,rej)=>{
+    res()
+    //rej()
+    // let a= true
+    // if(a){
+    //     res()
+    // }else{
+    //     rej()
+    // }
+})
+//console.log(promise,"hehe")
+
+promise.then(()=>{
+    console.log("done")
+}).catch(()=>{
+    console.log("err")
 })
