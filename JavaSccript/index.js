@@ -353,20 +353,56 @@
 //     })
 // })
 
-let promise = new Promise((res,rej)=>{
-    res()
-    //rej()
-    // let a= true
-    // if(a){
-    //     res()
-    // }else{
-    //     rej()
-    // }
-})
+// 8 Sep
+// in js we use promise to perform asynhronous task
+// let promise = new Promise((res,rej)=>{
+//     res()
+//     //rej()
+//     // let a= true
+//     // if(a){
+//     //     res()
+//     // }else{
+//     //     rej()
+//     // }
+// })
 //console.log(promise,"hehe")
 
-promise.then(()=>{
-    console.log("done")
-}).catch(()=>{
-    console.log("err")
-})
+// .then and .catch are functions that runs when a promise is resolved or rejected``
+// promise.then(()=>{
+//     console.log("done")
+// }).catch(()=>{
+//     console.log("err")
+// })
+
+// let step1 = function(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             res()
+//             console.log("Photo got selected")
+//         },4000)
+//     })
+// }
+
+// let step2 = function(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             res()
+//             console.log("Caption")
+//         },2000)
+//     })
+// }
+
+// step1().then(()=>{
+//     step2().then(()=>{
+
+//     })
+// })
+
+// async - await is used in place of .then and .catch . they can't be separately used.
+// async keyword is used to make the part of code or func asynchronous which means that we can run our code accordingly
+
+// async function call() {
+//     await step1()
+//     await step2()
+// }
+// call()
