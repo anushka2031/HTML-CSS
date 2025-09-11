@@ -38,8 +38,71 @@
 
 // },2000)
 
-let body= document.querySelector("body")
-function func(){
-    //console.log("hello")
-    body.style.backgroundColor="blue"
-}
+// let body= document.querySelector("body")
+// function func(){
+//     //console.log("hello")
+//     body.style.backgroundColor="blue"
+// }
+
+// 10 Sep
+
+// let btn = document.querySelector("button")
+// let body = document.querySelector("body")
+
+// btn.onclick=function(){
+//     console.log("hello")
+//     body.style.backgroundColor="red"
+// }
+
+// btn.addEventListener("click",()=>{
+//     body.style.backgroundColor="red"
+// })
+
+// let inp = document.querySelector("input")
+
+// inp.addEventListener("input",()=>{
+//     console.log("hello");
+    
+// })
+
+// let h2= document.querySelector("h2")
+// inp.addEventListener("input",(e)=>{
+//     //console.log(e);
+//     // console.log(e.target);
+//     // console.log(e.target.value);
+//     h2.innerText=e.target.value
+    
+    
+// })
+
+let form = document.querySelector("form")
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    let data={
+        firstname:form[0].value,
+        lastname:form[1].value,
+        email:form[2].value,
+        pass:form[3].value
+    
+    }
+    console.log(data);
+    //localStorage.setItem("formData",JSON.stringify(data))
+    localStorage.removeItem("formData",JSON.stringify(data))
+
+    // console.log(form[0].value);
+    // console.log(form[1].value);
+    // console.log(form[2].value);
+    // console.log(form[3].value);
+})
+
+
+
+
+// // used to store item in the local storage
+// localStorage.setItem("key","data1")
+// // used to acess data from the local storage
+// let data = localStorage.getItem("key")
+// console.log(data);
+
