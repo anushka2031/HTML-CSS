@@ -88,8 +88,8 @@ form.addEventListener("submit",(e)=>{
     
     }
     console.log(data);
-    //localStorage.setItem("formData",JSON.stringify(data))
-    localStorage.removeItem("formData",JSON.stringify(data))
+    localStorage.setItem("formData",JSON.stringify(data))
+    // localStorage.removeItem("formData",JSON.stringify(data))
 
     // console.log(form[0].value);
     // console.log(form[1].value);
@@ -106,3 +106,20 @@ form.addEventListener("submit",(e)=>{
 // let data = localStorage.getItem("key")
 // console.log(data);
 
+// 11 Sep
+let form2= document.querySelector("#form2")
+form2.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    let saveData= localStorage.getItem("formData")
+       let dataObj= JSON.parse(saveData)
+
+    let loginObj={
+        email:form2[0].value,
+        pass:form2[1].value
+    }
+    if(dataObj.email==loginObj.email && dataObj.pass==loginObj.pass){
+        prompt("login done")
+    }else{
+        prompt("error")
+    }
+})
