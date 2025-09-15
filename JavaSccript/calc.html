@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #container{
+            /* background-color: rgb(170, 127, 211); */
+            position: absolute;
+            top: 200px;
+            height: 400px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #btns{
+            height: 300px;
+            width: 290px;
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+        }
+
+        input{
+            height: 80px;
+            width: 260;
+            font-size: 30px;
+        }
+
+        button{
+            height: 40px;
+            width: 70px;
+            border-radius: 12px;
+            font-style: bold;
+            background-color: rgb(247, 149, 43);
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <input type="text">
+        <div id="btns">
+            <button>C</button>
+            <button>..</button>
+            <button>%</button>
+            <button>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+        </div>
+    </div>
+
+
+    <script src="calc.js"></script>
+</body>
+</html>
