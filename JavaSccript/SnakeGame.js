@@ -5,7 +5,7 @@ pen.fillStyle = "brown"
 // pen.fillRect(50,150,50,50)
 // pen.clearRect(50,140,50,50)
 
-let snakecell = [[0,0],[50,0]]
+let snakecell = [[0,0]]
 let cell = 50
 
 function draw(){
