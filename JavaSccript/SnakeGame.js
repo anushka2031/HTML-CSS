@@ -1,12 +1,12 @@
 let canvas = document.querySelector('canvas')
 let pen = canvas.getContext("2d")
-pen.fillStyle = "brown"
+
 
 // pen.fillRect(50,150,50,50)
 // pen.clearRect(50,140,50,50)
 
 let snakecell = [[0,0]]
-let cell = 30
+let cell = 50
 let direction = "right"
 let gameover = false
 let score = 0
@@ -15,7 +15,7 @@ let random = generateRandomcell()
 let id = setInterval(()=>{
     draw()
     update()
-},100)
+},200)
 
 document.addEventListener("keydown",(e)=>{
 
@@ -65,7 +65,7 @@ function update(){
     let newX
     let newY
 
-    if(direction == "right"){
+    if(direction == 'right'){
         newX = headX + cell
         newY = headY
 
@@ -76,11 +76,11 @@ function update(){
         newX = headX-cell
         newY = headY
 
-        if(newY<0){
+        if(newX<0){
             gameover = true
         }
 
-    }else if(direction="up"){
+    }else if(direction=='up'){
         newX=headX
         newY=headY-cell
 
