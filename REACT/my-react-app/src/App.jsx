@@ -68,8 +68,8 @@ import React, { useState} from "react";
 import Home from "./home";
 
 const App = () => {
-    console.log("hii");
-    let [state,SetState] = useState("red")
+    // console.log("hii");
+    let [state,SetState] = useState(0)
     function fun1(){
         // SetState(state+1)
         // SetState("green")
@@ -80,11 +80,12 @@ const App = () => {
         }
     }
     return(
-        <div style={{backgroundColor:state}}>
-            <h2>{state}</h2>
-            <button onClick={fun1}>click</button>
-            <Home/>
-        </div>
+        // <div style={{backgroundColor:state}}>
+        //     <h2>{state}</h2>
+        //     <button onClick={fun1}>click</button>
+        //     <Home/>
+        // </div>
+        <div><Home/></div>
     )
 }
 export default App
