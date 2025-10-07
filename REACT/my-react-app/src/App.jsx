@@ -64,29 +64,91 @@
 
 // 23 Sep
 
-import React, { useState} from "react";
-import Home from "./home";
+// import React, { useState} from "react";
+// import Home from "./home";
+
+// const App = () => {
+//     // console.log("hii");
+//     let [state,SetState] = useState(0)
+//     function fun1(){
+//         // SetState(state+1)
+//         // SetState("green")
+//         if(state=='red'){
+//             SetState("gold")
+//         }else{
+//             SetState("red")
+//         }
+//     }
+//     return(
+//         // <div style={{backgroundColor:state}}>
+//         //     <h2>{state}</h2>
+//         //     <button onClick={fun1}>click</button>
+//         //     <Home/>
+//         // </div>
+//         <div><Home/></div>
+//     )
+// }
+// export default App
+
+// 6 Oct
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+
+//     let [input,Setinput] = useState("")
+//     let [data,Setdata] = useState([])
+
+//     function fun1(e){
+//         // console.log(e.target.value);
+//         Setinput(e.target.value)
+//     }
+
+//     function done(){
+//         Setdata([...data,input])
+//     }
+
+//     function d(id){
+//        let filterData= data.filter((a,b)=>{
+//         return b!=id
+//        })
+//        Setdata(filterData)
+//     }
+
+//   return (
+//     <div>
+//         {/* <h2>{input}</h2> */}
+//         <input onChange={fun1} />
+//         <button onClick={done}>Click</button>
+//         {
+//             data.map((a,index)=>{
+//                 return(<>
+//                 <h2>{a}</h2>
+//                 <button onClick={()=>d(index)}>del</button>
+//                 </>)
+//             })
+//         }
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
 
 const App = () => {
-    // console.log("hii");
-    let [state,SetState] = useState(0)
-    function fun1(){
-        // SetState(state+1)
-        // SetState("green")
-        if(state=='red'){
-            SetState("gold")
-        }else{
-            SetState("red")
-        }
-    }
-    return(
-        // <div style={{backgroundColor:state}}>
-        //     <h2>{state}</h2>
-        //     <button onClick={fun1}>click</button>
-        //     <Home/>
-        // </div>
-        <div><Home/></div>
-    )
-}
-export default App
 
+    
+
+  return (
+    <div>
+        <input type='text' placeholder='name' value= {input.name} onChange={fun1} />
+        <br />
+        <input type='password' placeholder='password' value={input.password} onChange={fun1}/>
+        <br />
+    </div>
+  )
+}
+
+export default App
