@@ -99,10 +99,10 @@
 //     let [input,Setinput] = useState("")
 //     let [data,Setdata] = useState([])
 
-//     function fun1(e){
-//         // console.log(e.target.value);
-//         Setinput(e.target.value)
-//     }
+    // function fun1(e){
+    //     // console.log(e.target.value);
+    //     Setinput(e.target.value)
+    // }
 
 //     function done(){
 //         Setdata([...data,input])
@@ -134,19 +134,65 @@
 
 // export default App
 
+// 8 Oct
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+
+//   let [show,Setshow] = useState({})
+//   let [data,Setdata] = useState({
+//        name:"",
+//        email:"",
+//        password:""
+//   })
+
+//    function fun2(){
+//       Setshow({...data})
+//       console.log(show);
+      
+//    }
+
+//   function fun1(e){
+     
+//        let {name,value} = e.target
+//        Setdata({...data,[name]:value})
+//        console.log(data);
+       
+     
+//   }
+
+//   return (
+//     <div>
+//         <input type='text' placeholder='name' value= {data.name} onChange={fun1} name='name'/>
+//         <br />
+//         <br />
+//         <input type='email' placeholder='email' value={data.email} onChange={fun1} name='email'/>
+//         <br />
+//         <br />
+//          <input type='password' placeholder='password' value={data.password} onChange={fun1} name='password'/>
+//          <br />
+//          <br />
+//         <button onClick={fun2}>Click</button>
+//         <br />
+//         {show.name}
+//         <h2>{show.email}</h2>
+//         <p>{show.password}</p>
+//     </div>
+//   )
+// }
+
+// export default App
 
 import React from 'react'
+import SignUp from './SignUp'
+import Login from './Login'
 
 const App = () => {
-
-    
-
   return (
     <div>
-        <input type='text' placeholder='name' value= {input.name} onChange={fun1} />
-        <br />
-        <input type='password' placeholder='password' value={input.password} onChange={fun1}/>
-        <br />
+      <SignUp/>
+      <Login/>
     </div>
   )
 }
