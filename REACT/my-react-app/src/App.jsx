@@ -191,8 +191,13 @@ import Login from './Login'
 const App = () => {
   return (
     <div>
-      <SignUp/>
-      <Login/>
+      {/* <SignUp/>
+      <Login/> */}
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/SignUp' element={<SignUp/>}></Route>
+        <Route path='/Login' element={<Login/>}></Route>
+      </Routes>
     </div>
   )
 }

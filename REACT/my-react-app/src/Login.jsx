@@ -4,7 +4,7 @@ const Login = () => {
 
   let [show,Setshow] = useState({})
   let [data,Setdata] = useState({
-       name:"",
+    //    name:"",
        email:"",
        password:""
   })
@@ -27,9 +27,9 @@ const Login = () => {
   return (
     <div>
         <fieldset><legend>SignUp</legend>
-        <input type='text' placeholder='name' value= {data.name} onChange={fun1} name='name'/>
+        {/* <input type='text' placeholder='name' value= {data.name} onChange={fun1} name='name'/>
         <br />
-        <br />
+        <br /> */}
         <input type='email' placeholder='email' value={data.email} onChange={fun1} name='email'/>
         <br />
         <br />
