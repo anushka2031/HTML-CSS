@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
 
@@ -39,9 +40,14 @@ const SignUp = () => {
         <button onClick={fun2}>Click</button>
         <br />
         </fieldset>
-        {show.name}
+
+        <Link to={'/Login'}>
+        <button>Login</button>
+        </Link>
+
+        {/* {show.name}
         <h2>{show.email}</h2>
-        <p>{show.password}</p>
+        <p>{show.password}</p> */}
     </div>
   )
 }

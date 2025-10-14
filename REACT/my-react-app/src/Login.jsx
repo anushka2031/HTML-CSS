@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -26,7 +27,7 @@ const Login = () => {
 
   return (
     <div>
-        <fieldset><legend>SignUp</legend>
+        <fieldset><legend>Login</legend>
         {/* <input type='text' placeholder='name' value= {data.name} onChange={fun1} name='name'/>
         <br />
         <br /> */}
@@ -39,9 +40,13 @@ const Login = () => {
         <button onClick={fun2}>Click</button>
         <br />
         </fieldset>
-        {show.name}
+
+        <Link to={'/Signup'}>
+        <button>go to signup page</button>
+        </Link>
+        {/* {show.name}
         <h2>{show.email}</h2>
-        <p>{show.password}</p>
+        <p>{show.password}</p> */}
     </div>
   )
 }

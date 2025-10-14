@@ -80,8 +80,10 @@ import './App.css'
 
 import React , {useEffect , useState} from 'react'
 import './App.css'
+import { Link } from 'react-router-dom'
 
-const Home = () => {
+
+const Home = ({cart,SetCart,  apiData,SetData,filteredData,SetFilteredData}) => {
 
   let [apiData,SetData] = useState([])
 

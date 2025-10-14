@@ -184,20 +184,36 @@
 
 // export default App
 
-import React from 'react'
+import React, { useState } from 'react'
 import SignUp from './SignUp'
 import Login from './Login'
+import Home from "./Home";
+import { Route, Routes } from 'react-router-dom'
+import AddToCart from './AddToCart';
 
 const App = () => {
+
+  let [apiData,SetData] = useState([])
+  let [filteredData,SEtfilteredData]= useState([])
+
+  let [cart,SetCart] = useState([])
+  console.log(cart,"hii");
+  
+
   return (
+
     <div>
       {/* <SignUp/>
       <Login/> */}
+
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/SignUp' element={<SignUp/>}></Route>
         <Route path='/Login' element={<Login/>}></Route>
+         <Route   path='/cart'  element={<AddToCart cart={cart}/>} />
       </Routes>
+      
+      
     </div>
   )
 }
