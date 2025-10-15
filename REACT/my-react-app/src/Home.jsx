@@ -85,6 +85,11 @@ import { Link } from 'react-router-dom'
 
 const Home = ({cart,SetCart,  apiData,SetData,filteredData,SetFilteredData}) => {
 
+  let arr=[1,2,3,4,5]
+      let arr1=[6,7,8,...arr]
+      console.log(arr1,"rrrr");
+      
+
   let [apiData,SetData] = useState([])
 
   useEffect(()=>{
@@ -108,21 +113,50 @@ const Home = ({cart,SetCart,  apiData,SetData,filteredData,SetFilteredData}) => 
   }
 
   return (
+    // <div>
+    //   {
+    //     apiData.map((a)=>{
+    //       return(<>
+    //       <div id='card'>
+    //         <img src={a.image} />
+    //         <p>{a.name}</p>
+    //         <button onClick={()=>deletee(index)}>del</button>
+            
+    //       </div>
+    //       </>)
+    //     })
+    //   }
+
+    // </div>
+    
+    <>
+     <Link  to={'/cart'}>  
+       <button>add to Cart {cart.length}</button>
+       </Link>
     <div>
+     
+      <button onClick={fun1}>acs</button>
+      <button onClick={fun2}>des</button>
+      <button onClick={()=>lunch("Lunch")}>lunch</button>
+      <button onClick={()=>dinner("Dinner")}>dinner</button>
+      <button>breakfast</button>
+
+
       {
-        apiData.map((a)=>{
+        filteredddData.map((a,index)=>{
           return(<>
           <div id='card'>
-            <img src={a.image} />
+          <img  src={a.image}/>
             <p>{a.name}</p>
-            <button onClick={()=>deletee(index)}>del</button>
-            
+            <p> Rating: {a.rating}</p>
+         <button  onClick={()=> SetCart([...cart,a])}>add </button>
+           
           </div>
           </>)
         })
       }
-
     </div>
+    </>
   )
 }
 
