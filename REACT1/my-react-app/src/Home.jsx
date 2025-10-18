@@ -140,11 +140,7 @@ import './App.css'
 const Home = () => {
      let {dispatch,state}=   useContext(Context)
 
-     console.log(dispatch ,state,"hehehe");
-     
-  
-     
-   
+     console.log(dispatch ,state,"hehehe");  
 
   return (
    <>
