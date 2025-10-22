@@ -70,11 +70,20 @@
 
 import React from 'react'
 import Home from './Home'
+import AddToCart from './AddToCart'
+import { Route,Routes } from 'react-router-dom'
 
 const App = () => {
   return (
     <div>
-      <Home/>
+
+      {/* <Home/> */}
+
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/cart' element={<AddToCart/>}></Route>
+      </Routes>
+
     </div>
   )
 }
