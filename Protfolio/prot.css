@@ -9,6 +9,9 @@ body{
     display: inline;
 }
 
+button{
+    border: 2px solid black;
+}
 
 #navbar{
     height: 60px;
