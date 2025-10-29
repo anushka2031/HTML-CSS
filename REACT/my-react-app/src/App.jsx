@@ -184,36 +184,73 @@
 
 // export default App
 
-import React, { useState } from 'react'
-import SignUp from './SignUp'
-import Login from './Login'
-import Home from "./Home";
-import { Route, Routes } from 'react-router-dom'
-import AddToCart from './AddToCart';
+// import React, { useState } from 'react'
+// import SignUp from './SignUp'
+// import Login from './Login'
+// import Home from "./Home";
+// import { Route, Routes } from 'react-router-dom'
+// import AddToCart from './AddToCart';
 
-const App = () => {
+// const App = () => {
 
-  let [apiData,SetData] = useState([])
-  let [filteredData,SEtfilteredData]= useState([])
+//   let [apiData,SetData] = useState([])
+//   let [filteredData,SEtfilteredData]= useState([])
 
-  let [cart,SetCart] = useState([])
-  console.log(cart,"hii");
+//   let [cart,SetCart] = useState([])
+//   console.log(cart,"hii");
   
 
+//   return (
+
+//     <div>
+//       {/* <SignUp/>
+//       <Login/> */}
+
+//       <Routes>
+//         <Route path='/' element={<Home/>}></Route>
+//         <Route path='/SignUp' element={<SignUp/>}></Route>
+//         <Route path='/Login' element={<Login/>}></Route>
+//          <Route   path='/cart'  element={<AddToCart cart={cart}/>} />
+//       </Routes>
+      
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
+
+const App = () => {
+ 
+  let [state,setstate] = useState(0)
+  let [isrun,setrun] = useState(false)
+
+  useEffect(()=>{
+
+    setInterval(()=>{
+      setTimeout()
+    },1000)
+    
+  })
+
+  function fun1(){
+
+    
+  }
+
+  function fun2(){
+
+  }
+
+
   return (
-
     <div>
-      {/* <SignUp/>
-      <Login/> */}
-
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/SignUp' element={<SignUp/>}></Route>
-        <Route path='/Login' element={<Login/>}></Route>
-         <Route   path='/cart'  element={<AddToCart cart={cart}/>} />
-      </Routes>
-      
-      
+      <button onClick={fun1}>Start</button>
+      <button onClick={fun2}>Stop</button>
     </div>
   )
 }
