@@ -220,40 +220,125 @@
 
 // export default App
 
-import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
+// import React from 'react'
+// import { useEffect } from 'react'
+// import { useState } from 'react'
+
+// const App = () => {
+ 
+//   let [state,setstate] = useState(0)
+  
+//   let [isrun,setrun] = useState(false)
+
+//   useEffect(()=>{
+
+//     setInterval(()=>{
+//       setTimeout()
+//     },1000)
+    
+//   })
+
+//   function fun1(){
+
+    
+//   }
+
+//   function fun2(){
+
+//   }
+
+
+//   return (
+//     <div>
+//       <button onClick={fun1}>Start</button>
+//       <button onClick={fun2}>Stop</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React, { useMemo, useState } from 'react'
+
+// const App = () => {
+
+//   let [data,SetData] = useState(0)
+//   // let res=0;
+//   // for(let i=0;i<100000000;i++){
+//   //   res+=i;
+//   // }
+
+//   const res = useMemo(()=>{
+//     console.log("heellloooooo");
+//     let total=0
+//     for(let i=0;i<1000000000000;i++){
+//        total+=i;
+//     }
+//     return total;
+//   },[])
+
+
+//   return (
+//     <div>
+//     <h2>{res}</h2>
+//     <h2>{data}</h2>
+//     <button onClick={()=>SetData(data+1)}>click</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React, { useEffect, useRef, useState } from 'react'
+
+// const App = () => {
+
+//   let [input,setinput] = useState("")
+//   // let [data,Setdata] = useState(0)
+//   let count = useRef(0)
+//   console.log("helll");
+  
+
+//   useEffect(()=>{
+//     // Setdata(data+1)
+//     count.current+=1
+//   })
+
+//   return (
+//     <div>
+//       <h1>{count.current}</h1>
+//       <input type="text" onChange={(e)=>setinput(e.target.value)} />
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React, { memo, useState } from 'react'
 
 const App = () => {
- 
-  let [state,setstate] = useState(0)
-  
-  let [isrun,setrun] = useState(false)
 
-  useEffect(()=>{
-
-    setInterval(()=>{
-      setTimeout()
-    },1000)
-    
-  })
-
-  function fun1(){
-
-    
-  }
-
-  function fun2(){
-
-  }
-
+  let [data,Setdata] = useState(0)
 
   return (
     <div>
-      <button onClick={fun1}>Start</button>
-      <button onClick={fun2}>Stop</button>
+      <h1>{data}</h1>
+      <button onClick={()=> Setdata(data+1)}>Click</button>
+      <Home/>
     </div>
   )
 }
+
+const Home = memo (() => {
+
+  console.log("hii");
+  
+  return(
+    <div>
+      Home
+    </div>
+  )
+})
 
 export default App
