@@ -3,29 +3,29 @@
 // Day: Tuesday
 
 // File System
-// let fs = require('fs')
-// fs.writeFileSync('index.txt', "Hello") // Write data in file if it exist or it create a new file and add data
-// let data = fs.readFileSync('index.txt') // Read data of file
-// console.log(data.toString());
-// fs.appendFileSync('index.txt',"Hiii") // Append data in existing data
-// fs.unlinkSync('index.txt') // Used to delete file
+let fs = require('fs')
+fs.writeFileSync('index.txt', "Hello") // Write data in file if it exist or it create a new file and add data
+let data = fs.readFileSync('index.txt') // Read data of file
+console.log(data.toString());
+fs.appendFileSync('index.txt',"Hiii") // Append data in existing data
+fs.unlinkSync('index.txt') // Used to delete file
 
 // Operating System
-// let os = require('os')
-// console.log(os.arch());
-// console.log(os.freemem());
-// console.log(os.homedir());
-// console.log(os.type());
-// console.log(os.hostname());
-// console.log(os.cpus());
-// console.log(os.platform());
-// console.log(os.uptime());
-// console.log(os.machine());
-// console.log(os.networkInterfaces());
-// console.log(os.totalmem());
-// console.log(os.userInfo());
-// console.log(os.version());
-// console.log(os);
+let os = require('os')
+console.log(os.arch());
+console.log(os.freemem());
+console.log(os.homedir());
+console.log(os.type());
+console.log(os.hostname());
+console.log(os.cpus());
+console.log(os.platform());
+console.log(os.uptime());
+console.log(os.machine());
+console.log(os.networkInterfaces());
+console.log(os.totalmem());
+console.log(os.userInfo());
+console.log(os.version());
+console.log(os);
 
 let express = require('express')
 let app = express()
